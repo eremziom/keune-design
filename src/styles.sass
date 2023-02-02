@@ -27,6 +27,14 @@ body
     .left
       border-right: none
 
+@media #{$lg-nav}
+  .navbar-nav
+    // background-color: rgba(46, 46, 46, 0.5)
+    border-radius: 10px
+  ul
+    .dropdown-menu
+      background: none !important
+
 .photo-button-wide
   position: absolute
   right: 30px
@@ -263,3 +271,74 @@ body
       transition: 0.5s
     .arrow-hevron
       margin-top: 3px
+
+.menuWhite
+  .navbar-nav
+    .nav-link
+      color: white
+    .nav-link:hover
+      color: black
+    .dropdown-item
+      color: white
+    .dropdown-item:hover
+      background: none
+      color: black
+    .dropdown-menu
+      background-color: rgba(46, 46, 46, 0.5)
+
+.menuBlack
+  .navbar-nav
+    .nav-link
+      color: black
+    .nav-link:hover
+      color: white
+    .dropdown-item
+      color: black
+    .dropdown-item:hover
+      background: none
+      color: white
+    .dropdown-menu
+      background-color: rgba(214, 214, 214, 0.5)
+
+
+@media #{$lg-nav}
+  .menuBlack
+    .navbar-nav
+      background-color: rgba(214, 214, 214, 0.8)
+  .menuWhite
+    .navbar-nav
+      background-color: rgba(46, 46, 46, 0.8)
+
+ul
+  align-items: center
+  li
+    padding-right: 20px
+
+.media-container
+  height: 55px
+  width: 55px
+  position: relative
+  .fb-link
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    
+  .insta-link
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+  .twitter-link
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+  .yt-link
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+
+.text-black
+  color: black
