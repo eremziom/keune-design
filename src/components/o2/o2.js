@@ -22,16 +22,52 @@ class O2 extends React.Component {
               </span>
             </div>
           </div>
-          <O2image name="CARE" photo={care} className="col-md-8 right" shape="img-fluid" size="-wide"/>
+          <O2image
+            name='CARE'
+            photo={care}
+            className='col-md-8 right'
+            shape='img-fluid'
+            size='-wide'
+          />
         </div>
         <div className='row gx-0 o2-row'>
-          <O2image name="DESIGN" photo={design} className="col-md-4 d-none d-md-block left" shape="img-fluid" size=""/>
-          <O2image name="BLEND" photo={blend} className="col-md-8 right" shape="img-fluid" size="-wide"/>
+          <O2image
+            name='DESIGN'
+            photo={design}
+            className='col-md-4 d-none d-md-block left'
+            shape='img-fluid'
+            size=''
+          />
+          <O2image
+            name='BLEND'
+            photo={blend}
+            className='col-md-8 right'
+            shape='img-fluid'
+            size='-wide'
+          />
         </div>
         <div className='row gx-0 o2-row' >
-          <O2image name="KOLORYZACJA" photo={color} className="col-md-8 left" shape="img-fluid" size="-wide"/>
-          <O2image name="SO PURE" photo={pure} className="col-md-4 col-sm-6 right" shape="image-squer" size=""/>
-          <O2image name="DESIGN" photo={design} className="col-sm-6 d-md-none left" shape="image-squer" size=""/>
+          <O2image
+            name='KOLORYZACJA'
+            photo={color}
+            className='col-md-8 left'
+            shape='img-fluid'
+            size='-wide'
+          />
+          <O2image
+            name='SO PURE'
+            photo={pure}
+            className='col-md-4 col-sm-6 right'
+            shape='image-squer'
+            size=''
+          />
+          <O2image
+            name='DESIGN'
+            photo={design}
+            className='col-sm-6 d-md-none left'
+            shape='image-squer'
+            size=''
+          />
         </div>
       </div>
     )

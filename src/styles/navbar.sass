@@ -1,0 +1,91 @@
+@import './variables'
+
+header
+  position: absolute
+  top: 0
+  width: 100%
+  max-width: 1200px
+  z-index: 1000
+
+.menuWhite
+  .navbar-nav
+    .nav-link
+      color: $color-1
+    .nav-link:hover
+      color: $color-2
+    .dropdown-item
+      color: $color-1
+    .dropdown-item:hover
+      background: none
+      color: $color-2
+    .dropdown-menu
+      background-color: rgba(46, 46, 46, 0.5)
+
+.menuBlack
+  .navbar-nav
+    .nav-link
+      color: $color-2
+    .nav-link:hover
+      color: $color-1
+    .dropdown-item
+      color: $color-2
+    .dropdown-item:hover
+      background: none
+      color: $color-1
+    .dropdown-menu
+      background-color: rgba(214, 214, 214, 0.5)
+
+
+@media #{$lg-nav}
+  .menuBlack
+    .navbar-nav
+      background-color: rgba(214, 214, 214, 0.8)
+  .menuWhite
+    .navbar-nav
+      background-color: rgba(46, 46, 46, 0.8)
+
+@media #{$lg-nav}
+  .navbar-nav
+    border-radius: 10px
+  .navbar
+    ul
+      .dropdown-menu
+        background: none !important
+        text-align: center
+        li
+          padding-right: 0 !important
+
+.navbar    
+  ul
+    align-items: center
+    li
+      padding-right: 20px
+
+.media-container
+  height: 55px
+  width: 55px
+  position: relative
+  .fb-link
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    
+  .insta-link
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+  .twitter-link
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+  .yt-link
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+
+.navbar-toggler-icon.white
+  filter: invert(100%)

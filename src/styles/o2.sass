@@ -1,0 +1,108 @@
+@import './variables'
+
+.o2-row 
+  .right
+    border-left: $border-o2
+    border-bottom: $border-o2
+  .left
+    border-right: $border-o2
+    border-bottom: $border-o2
+
+@media #{$md}
+  .o2-row 
+    .right
+      border-left: none
+    .left
+      border-right: none
+
+.photo-button-wide
+  position: absolute
+  right: 30px
+  bottom: 30px
+  text-align: left
+  line-height: 1
+  font-size: 12px
+  a
+    text-decoration: none
+    color: $color-1
+    transition: 0.5s
+  .line
+    width: 100px
+    height: 1px
+    background-color: $color-1
+    margin-right: 15px
+    transition: 0.5s
+  span
+    margin-right: 30px
+    transition: 0.5s
+
+.photo-button
+  position: absolute
+  right: 30px
+  bottom: 30px
+  text-align: left
+  line-height: 1
+  font-size: 12px
+  a
+    text-decoration: none
+    color: $color-1
+    transition: 0.5s
+  .line
+    width: 100px
+    height: 1px
+    background-color: $color-1
+    margin-right: 15px
+    transition: 0.5s
+  span
+    margin-right: 30px
+    transition: 0.5s
+
+.image-container:hover a span
+  color: $color-hover
+  transition: 0.5s
+  margin-right: 10px
+
+.image-container:hover .line
+  background-color: $color-hover
+  transition: 0.5s
+
+.image-container:hover
+  opacity: 0.9
+
+.image-title-wide
+  position: absolute
+  left: 30px
+  bottom: 30px
+  text-align: left
+  line-height: 1
+  font-size: 40px
+  color: $color-1
+  transition: 0.5s
+
+.image-title
+  position: absolute
+  left: 30px
+  bottom: 70px
+  text-align: left
+  line-height: 1
+  font-size: 40px
+  color: $color-1
+
+.image-squer
+  width: 100%
+  height: auto
+  max-height: 400px
+  object-fit: cover
+
+@media #{$md}
+  .image-title-wide
+    bottom: 70px
+    transition: 0.5s
+
+.o2-title
+  font-size: 40px
+  font-weight: light
+  line-height: 1
+  width: 100%
+  margin: 50px 0
+  color: $color-2
