@@ -25,7 +25,7 @@ class Navigation extends React.Component{
               {this.props.active ? <LogoWhite /> : <Logo />}
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+              <span className={ this.props.active ? "navbar-toggler-icon white" : "navbar-toggler-icon"}></span>
             </button>
             <div className={`collapse navbar-collapse ${this.props.active ? "menuWhite" : "menuBlack"}`} id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -37,8 +37,10 @@ class Navigation extends React.Component{
                     Produkty
                   </a>
                   <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">Odzież</a></li>
+                    <li><a className="dropdown-item" href="#">Styling</a></li>
                     <li><a className="dropdown-item" href="#">Biżuteria</a></li>
+                    <li><a className="dropdown-item" href="#">Dodatki</a></li>
+                    <li><a className="dropdown-item" href="#">Odzież</a></li>
                   </ul>
                 </li>
                 <li className="nav-item">

@@ -34,6 +34,9 @@ body
   ul
     .dropdown-menu
       background: none !important
+      text-align: center
+    .dropdown-menu li
+      padding-right: 0
 
 .photo-button-wide
   position: absolute
@@ -132,18 +135,22 @@ body
   margin: 0 0 0 80px
   transition: 0.5s
 
-.carousel-indicators button
+.carousel-indicators
+  button
     height: 6px !important
     width: 6px !important
     margin: 0 30px !important
     border-radius: 100%
-    border-color: white
     background-color: transparent !important
-    border: 1px solid white !important
+
+.carousel-indicators
+  button.white-dot
+      border: 1px solid white !important
+  button.black-dot
+      border: 1px solid black !important  
 
 .carousel-indicators
   .active
-    background: url('assets/znak_keune.svg')
     border: none !important
     height: 20px !important
     width: 20px !important
@@ -151,6 +158,10 @@ body
 .carousel-indicators
   .active.white
     background: url('assets/znak_keune_WHITE.svg')
+
+.carousel-indicators
+  .active.black
+    background: url('assets/znak_keune.svg')
 
 .underline
   border-bottom: 1px solid white
@@ -162,11 +173,14 @@ body
   opacity: 0.6
   margin-left: 40px
   transition: 0.5s
+.underline.black
+  border-bottom: 1px solid black
 
 .controls
   bottom: 90px
   left: calc(50% - 8px)
   transition: 0.5s
+  color: black
   button
     background: 0 0
     border: none
@@ -198,6 +212,8 @@ body
     background-color: white
     width: 150px
     transition: 0.5s
+  .arrow-underline.black
+    background-color: black
   .arrow-circle
     margin-left: 20px
     height: 50px
@@ -205,8 +221,13 @@ body
     border: 1px solid white
     border-radius: 50%
     transition: 0.5s
+  .arrow-circle.black
+    border: 1px solid black
   .arrow-hevron
     margin-top: calc(50% - 6px)
+  .arrow-hevron.black
+    color: black
+
 
 .slider-arrow:hover
   color: yellow
@@ -308,7 +329,7 @@ body
   .menuWhite
     .navbar-nav
       background-color: rgba(46, 46, 46, 0.8)
-
+    
 ul
   align-items: center
   li
@@ -342,3 +363,12 @@ ul
 
 .text-black
   color: black
+
+.carousel-control-prev-icon.black
+  filter: invert(100%)
+
+.carousel-control-next-icon.black
+  filter: invert(100%)
+
+.navbar-toggler-icon.white
+  filter: invert(100%)

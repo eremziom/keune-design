@@ -17,7 +17,7 @@ class Main extends React.Component {
     return (
       <div style={{maxWidth: "1200px", margin: "0 auto"}}>
         <Navigation active={this.state.active} />
-        <Slider toggleActive={this.toggleActive}/>
+        <Slider active={this.state.active} toggleActive={this.toggleActive}/>
         <O2 />
         
       </div>
